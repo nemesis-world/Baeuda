@@ -1,0 +1,38 @@
+.helpers {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.helpers button {
+    border: 0;
+    background-color: transparent;
+    font-family: 'Founders Grotesk';
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.helpers .block {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    transform: translate(-30px, -100%);
+    padding: 20px;
+    border: 2px solid #1F1F1F;
+    width: 240px;
+}
+
+.helpers .block .kbd {
+    display: inline-flex;
+    font-size: 12px;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 4px;
+    span {
+        display: inline-block;
+        margin-right: 10px;
+        border: 2px solid #1F1F1F;
+        padding: 8px 10px;
+        font-weight: bold;
+    }
+}

@@ -1,24 +1,30 @@
-import React, { Component } from "react";
-import Greetings from "../../containers/Greetings/Greetings";
-import "./Popup.css";
+import React from 'react';
+import logo from '../../assets/img/logo-white.svg';
+import './Popup.css';
 
-class Popup extends Component {
-  render() {
-    return (
-      <div>
-        <h1>This is the Popup Window</h1>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center"
-          }}
+const Popup = () => {
+  const now = new Date();
+  const thisYear = now.getUTCFullYear();
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h2>Credits</h2>
+        <p>Voice over: Daniel Kim</p>
+        <p>Design / Dev: Julien Henrotte</p>
+        <h2>Special Thanks</h2>
+        <p>Julie 박현정, Yumin 강유민</p>
+        <a
+          className="App-link"
+          href="https://itsnemesis.com"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <Greetings />
-        </div>
-      </div>
-    );
-  }
-}
+          <img src={logo} className="App-logo" alt="logo" />
+        </a>
+        <p>© {thisYear} - All rights reserved.</p>
+      </header>
+    </div>
+  );
+};
 
 export default Popup;

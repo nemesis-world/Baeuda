@@ -1,0 +1,112 @@
+$bg: #f2f5f6;
+$black: #1F1F1F;
+$red: #ce2e3b;
+$blue: #0047a0;
+
+h2 {
+  font-family: 'Jua', sans-serif;
+  font-size: 80px;
+  line-height: 60px;
+  margin: 0;
+}
+
+#app {
+  background-color: $bg;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.letter {
+  text-align: center;
+  width: 300px;
+  border: 6px solid $black;
+  hr {
+    height: 6px;
+    width: 50px;
+    background-color: $black;
+    border: 0;
+    margin: 16px auto 10px;
+  }
+  &__block {
+   padding: 70px 40px 55px; 
+  }
+  &__phonetic {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  &__helper {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    border-top: 6px solid $black;
+    padding: 10px 0;
+    img {
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+}
+
+.header {
+  top: 20px;
+  left: 20px;
+  position: fixed;
+  display: flex;
+  h1 {
+    margin: 0;
+    font-size: 14px;
+    span {
+      font-size: 12px;
+    }
+  }
+}
+
+.gradient {
+  position: fixed;
+  width: 25vw;
+  height: 25vw;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-30%) translateX(calc(-25vw));
+  background: radial-gradient(50% 50% at 50% 50%, #F7B1CA 0%, rgba(255, 246, 240, 0) 100%);
+  &--right {
+    transform: translateY(-60%) translateX(calc(0vw));
+    background: radial-gradient(50% 50% at 50% 50%, #66FEFE 0%, rgba(255, 246, 240, 0) 100%);
+  }
+}
+
+.content {
+  z-index: 1;
+  &__spacebar {
+    padding-top: 8px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 10px;
+    width: 100%;
+    left: 0;
+    img {
+      margin-right: 8px;
+    }
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  a, img {
+    display: inline-block;
+  }
+}
