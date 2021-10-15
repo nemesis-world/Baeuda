@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback, useReducer } from 'react';
+import { animated, useSpring } from 'react-spring';
 import {
   SpaceBar,
   AudioPlayer,
@@ -31,6 +32,12 @@ const Newtab = () => {
     colors[getRandom(colors)],
   ]);
   const [count, dispatch] = useReducer(counter, initialCount);
+
+  const styles = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    delay: 300,
+  });
 
   const setRandomLetter = useCallback(() => {
     const randomNum = getRandom(korean);
@@ -96,8 +103,10 @@ const Newtab = () => {
         </h1>
       </header>
       <div className="content">
-        {letter}
-        <SpaceBar count={count} />
+        <animated.div style={styles}>
+          {letter}
+          <SpaceBar count={count} />
+        </animated.div>
       </div>
       <Helpers />
       <Footer />
