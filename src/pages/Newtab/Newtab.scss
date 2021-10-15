@@ -69,20 +69,6 @@ h2 {
   }
 }
 
-.gradient {
-  position: fixed;
-  width: 25vw;
-  height: 25vw;
-  left: 50%;
-  top: 50%;
-  transform: translateY(-30%) translateX(calc(-25vw));
-  background: radial-gradient(50% 50% at 50% 50%, #F7B1CA 0%, rgba(255, 246, 240, 0) 100%);
-  &--right {
-    transform: translateY(-60%) translateX(calc(0vw));
-    background: radial-gradient(50% 50% at 50% 50%, #66FEFE 0%, rgba(255, 246, 240, 0) 100%);
-  }
-}
-
 .content {
   z-index: 1;
   &__spacebar {

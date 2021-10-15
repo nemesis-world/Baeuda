@@ -1,5 +1,13 @@
 import React, { useState, useEffect, useCallback, useReducer } from 'react';
-import { SpaceBar, AudioPlayer, Footer, Helpers } from '../../components';
+import {
+  SpaceBar,
+  AudioPlayer,
+  Footer,
+  Helpers,
+  Gradients,
+} from '../../components';
+import { getRandom } from '../../helpers';
+import { colors } from '../../variables/colors';
 import { korean } from '../../assets/alphabet/korean';
 import './Newtab.css';
 import './Newtab.scss';
@@ -18,10 +26,14 @@ const Newtab = () => {
   const initialCount = 0;
   const [currentLetter, setCurrentLetter] = useState(null);
   const [currentSoundSprite, setCurrentSoundSprite] = useState([]);
+  const [gradientsArray, setGradientsArray] = useState([
+    colors[getRandom(colors)],
+    colors[getRandom(colors)],
+  ]);
   const [count, dispatch] = useReducer(counter, initialCount);
 
   const setRandomLetter = useCallback(() => {
-    const randomNum = Math.floor(Math.random() * korean.length);
+    const randomNum = getRandom(korean);
     const randomLetter = korean[randomNum];
     setCurrentLetter(randomLetter);
     setCurrentSoundSprite(filterItems(korean, randomLetter));
@@ -31,6 +43,10 @@ const Newtab = () => {
     (event) => {
       if (event.keyCode === 32) {
         setRandomLetter();
+        setGradientsArray([
+          colors[getRandom(colors)],
+          colors[getRandom(colors)],
+        ]);
         dispatch();
       }
     },
@@ -70,8 +86,10 @@ const Newtab = () => {
 
   return (
     <main className="app">
-      <div className="gradient"></div>
-      <div className="gradient gradient--right"></div>
+      <Gradients
+        firstGradient={gradientsArray[0]}
+        secondGradient={gradientsArray[1]}
+      />
       <header className="header">
         <h1>
           🇰🇷 <span>배우다</span> / Baeuda

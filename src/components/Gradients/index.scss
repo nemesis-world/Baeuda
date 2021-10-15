@@ -1,0 +1,35 @@
+@keyframes animationGradientOne {
+    from {transform: translateY(-30%) translateX(calc(-25vw));}
+    to {transform: translateY(-60%) translateX(calc(-25vw));}
+  }
+  
+  @keyframes animationGradientTwo {
+    from {transform: translateY(-60%) translateX(calc(0vw));}
+    to {transform: translateY(-30%) translateX(calc(0vw));}
+  }
+  
+  .gradient {
+    position: fixed;
+    width: 25vw;
+    height: 25vw;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-30%) translateX(calc(-25vw));
+    animation: animationGradientOne 3s infinite alternate;
+    &--right {
+      transform: translateY(-60%) translateX(calc(0vw));
+      animation: animationGradientTwo 3s infinite alternate;
+    }
+    span {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background: #66FEFE;
+        transition: background-color .6s ease-in;
+        position: absolute;
+        z-index: -1;
+        &:last-child {
+            background: radial-gradient(50% 50% at 50% 50%, rgba(255, 246, 240, 0) 0%, #f2f5f6 100%)
+        }
+    }
+  }
