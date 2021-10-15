@@ -36,7 +36,7 @@ const Newtab = () => {
   const styles = useSpring({
     from: { opacity: 0 },
     to: { opacity: 1 },
-    delay: 300,
+    delay: 200,
   });
 
   const setRandomLetter = useCallback(() => {
