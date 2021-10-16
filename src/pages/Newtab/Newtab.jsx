@@ -3,6 +3,7 @@ import { animated, useSpring } from 'react-spring';
 import {
   SpaceBar,
   AudioPlayer,
+  Header,
   Footer,
   Helpers,
   Gradients,
@@ -97,11 +98,7 @@ const Newtab = () => {
         firstGradient={gradientsArray[0]}
         secondGradient={gradientsArray[1]}
       />
-      <header className="header">
-        <h1>
-          🇰🇷 <span>배우다</span> / Baeuda
-        </h1>
-      </header>
+      <Header />
       <div className="content">
         <animated.div style={styles}>
           {letter}
