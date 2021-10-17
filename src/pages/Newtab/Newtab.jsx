@@ -7,6 +7,7 @@ import {
   Footer,
   Helpers,
   Gradients,
+  Navigation,
 } from '../../components';
 import { getRandom } from '../../helpers';
 import { colors } from '../../variables/colors';
@@ -99,6 +100,7 @@ const Newtab = () => {
         secondGradient={gradientsArray[1]}
       />
       <Header />
+      <Navigation />
       <div className="content">
         <animated.div style={styles}>
           {letter}
