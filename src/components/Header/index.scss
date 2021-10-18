@@ -1,0 +1,14 @@
+.header {
+    top: 20px;
+    left: 20px;
+    position: fixed;
+    display: flex;
+    z-index: 20;
+    h1 {
+      margin: 0;
+      font-size: 14px;
+      span {
+        font-size: 12px;
+      }
+    }
+  }

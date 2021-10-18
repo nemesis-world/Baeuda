@@ -1,0 +1,11 @@
+.footer {
+    position: fixed;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 20;
+    a, img {
+      display: inline-block;
+    }
+  }
+  

@@ -1,0 +1,17 @@
+.grid {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    &__item {
+        display: inline-flex;
+        padding: 8px;
+        border: 1px solid var(--black);
+        font-family: 'Jua', sans-serif;
+        font-size: 24px;
+        width: 5.3%;
+        justify-content: center;
+        line-height: 30px;
+        margin-bottom: 4px;
+    }
+}

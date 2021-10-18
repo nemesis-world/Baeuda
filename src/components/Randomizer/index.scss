@@ -1,0 +1,40 @@
+h2 {
+    font-family: 'Jua', sans-serif;
+    font-size: 80px;
+    line-height: 60px;
+    margin: 0;
+  }
+
+.letter {
+    text-align: center;
+    width: 300px;
+    border: 6px solid var(--black);
+    position: fixed;
+    transform: translate(-50%, -50%);
+    hr {
+        height: 6px;
+        width: 50px;
+        background-color: var(--black);
+        border: 0;
+        margin: 16px auto 10px;
+    }
+    &__block {
+        padding: 70px 40px 55px; 
+    }
+    &__phonetic {
+        font-size: 32px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    &__helper {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        border-top: 6px solid var(--black);
+        padding: 10px 0;
+        img {
+        display: inline-block;
+        cursor: pointer;
+        }
+    }
+}
