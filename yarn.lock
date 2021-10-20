@@ -2749,7 +2749,7 @@
   "resolved" "https://registry.npmjs.org/atob/-/atob-2.1.2.tgz"
   "version" "2.1.2"
 
-"autoprefixer@^10.0.2":
+"autoprefixer@^10.0.2", "autoprefixer@^10.3.7":
   "integrity" "sha512-EmGpu0nnQVmMhX8ROoJ7Mx8mKYPlcUHuxkwrRYEYMz85lu7H09v8w6R1P0JPdn/hKU32GjpLBFEOuIlDWCRWvg=="
   "resolved" "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.3.7.tgz"
   "version" "10.3.7"
@@ -7798,7 +7798,7 @@
   "resolved" "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-4.1.0.tgz"
   "version" "4.1.0"
 
-"postcss@^8.0.9", "postcss@^8.1.0", "postcss@^8.1.6", "postcss@^8.2.1", "postcss@^8.2.14", "postcss@^8.2.4":
+"postcss@^8.0.9", "postcss@^8.1.0", "postcss@^8.1.6", "postcss@^8.2.1", "postcss@^8.2.14", "postcss@^8.2.4", "postcss@^8.3.9":
   "integrity" "sha512-f/ZFyAKh9Dnqytx5X62jgjhhzttjZS7hMsohcI7HEI5tjELX/HxCy3EFhsRxyzGvrzFF+82XPvCS8T9TFleVJw=="
   "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.3.9.tgz"
   "version" "8.3.9"

@@ -6,6 +6,7 @@ export const korean = [
     letter: 'ㄱ',
     phonetic: 'G',
     helping: 'G<span>un</span>',
+    type: 'consonants',
     sound: {
       file: 'file_16.wav',
       time: [0, 540],
@@ -15,6 +16,7 @@ export const korean = [
     letter: 'ㄴ',
     phonetic: 'N',
     helping: 'N<span>ose</span>',
+    type: 'consonants',
     sound: {
       file: 'file_16.wav',
       time: [1700, 700],
@@ -24,6 +26,7 @@ export const korean = [
     letter: 'ㄷ',
     phonetic: 'D',
     helping: 'D<span>oor</span>',
+    type: 'consonants',
     sound: {
       file: 'file_16.wav',
       time: [3750, 700],
@@ -33,6 +36,7 @@ export const korean = [
     letter: 'ㄹ',
     phonetic: 'Rl',
     helping: 'R<span>att</span>l<span>esnake</span>',
+    type: 'consonants',
     sound: {
       file: 'file_16.wav',
       time: [5880, 650],
@@ -42,6 +46,7 @@ export const korean = [
     letter: 'ㅁ',
     phonetic: 'M',
     helping: 'M<span>outh</span>',
+    type: 'consonants',
     sound: {
       file: 'file_16.wav',
       time: [7800, 600],
@@ -51,6 +56,7 @@ export const korean = [
     letter: 'ㅂ',
     phonetic: 'B',
     helping: 'B<span>ucket</span>',
+    type: 'consonants',
     sound: {
       file: 'file_16.wav',
       time: [9800, 600],
@@ -60,6 +66,7 @@ export const korean = [
     letter: 'ㅅ',
     phonetic: 'S',
     helping: 'S<span>ki Mountain</span>',
+    type: 'consonants',
     sound: {
       file: 'file_16.wav',
       time: [11660, 700],
@@ -69,6 +76,7 @@ export const korean = [
     letter: 'ㅇ',
     phonetic: 'Silent / ng',
     helping: '<span>Nothi</span>ng',
+    type: 'consonants',
     sound: {
       file: 'file_16.wav',
       time: [13660, 700],
@@ -78,6 +86,7 @@ export const korean = [
     letter: 'ㅈ',
     phonetic: 'J',
     helping: 'J<span>oy</span>',
+    type: 'consonants',
     sound: {
       file: 'file_16.wav',
       time: [15450, 700],
@@ -87,6 +96,7 @@ export const korean = [
     letter: 'ㅊ',
     phonetic: 'Ch',
     helping: 'Ch<span>ampion</span>',
+    type: 'consonants',
     sound: {
       file: 'file_16.wav',
       time: [17300, 750],
@@ -96,6 +106,7 @@ export const korean = [
     letter: 'ㅋ',
     phonetic: 'K',
     helping: '',
+    type: 'consonants',
     sound: {
       file: 'file_16.wav',
       time: [19300, 750],
@@ -105,6 +116,7 @@ export const korean = [
     letter: 'ㅌ',
     phonetic: 'T',
     helping: '',
+    type: 'consonants',
     sound: {
       file: 'file_16.wav',
       time: [21250, 750],
@@ -114,6 +126,7 @@ export const korean = [
     letter: 'ㅍ',
     phonetic: 'P',
     helping: 'P<span>art II</span>',
+    type: 'consonants',
     sound: {
       file: 'file_16.wav',
       time: [23350, 750],
@@ -123,6 +136,7 @@ export const korean = [
     letter: 'ㅎ',
     phonetic: 'H',
     helping: 'H<span>ole</span>',
+    type: 'consonants',
     sound: {
       file: 'file_16.wav',
       time: [25194, 410],
@@ -137,6 +151,7 @@ export const korean = [
     letter: 'ㄲ',
     phonetic: 'gg/kk',
     helping: '',
+    type: 'consonants',
     sound: {
       file: 'file_17.wav',
       time: [200, 750],
@@ -146,6 +161,7 @@ export const korean = [
     letter: 'ㄸ',
     phonetic: 'T',
     helping: '',
+    type: 'consonants',
     sound: {
       file: 'file_17.wav',
       time: [2260, 750],
@@ -155,6 +171,7 @@ export const korean = [
     letter: 'ㅃ',
     phonetic: 'P',
     helping: '',
+    type: 'consonants',
     sound: {
       file: 'file_17.wav',
       time: [4450, 410],
@@ -164,6 +181,7 @@ export const korean = [
     letter: 'ㅆ',
     phonetic: 'SS',
     helping: '',
+    type: 'consonants',
     sound: {
       file: 'file_17.wav',
       time: [6570, 410],
@@ -173,6 +191,7 @@ export const korean = [
     letter: 'ㅉ',
     phonetic: 'JJ',
     helping: '',
+    type: 'consonants',
     sound: {
       file: 'file_17.wav',
       time: [8900, 600],
@@ -187,6 +206,7 @@ export const korean = [
     letter: 'ㅏ',
     phonetic: 'A',
     helping: 'A<span>fter</span>',
+    type: 'vowels',
     sound: {
       file: 'file_15.wav',
       time: [0, 650],
@@ -196,6 +216,7 @@ export const korean = [
     letter: 'ㅑ',
     phonetic: 'Ya',
     helping: 'Ya',
+    type: 'vowels',
     sound: {
       file: 'file_15.wav',
       time: [1600, 700],
@@ -205,6 +226,7 @@ export const korean = [
     letter: 'ㅓ',
     phonetic: 'O',
     helping: '<span>Bef</span>o<span>re</span>',
+    type: 'vowels',
     sound: {
       file: 'file_15.wav',
       time: [3670, 700],
@@ -214,6 +236,7 @@ export const korean = [
     letter: 'ㅕ',
     phonetic: 'Eyo',
     helping: 'Ya',
+    type: 'vowels',
     sound: {
       file: 'file_15.wav',
       time: [5700, 700],
@@ -223,6 +246,7 @@ export const korean = [
     letter: 'ㅗ',
     phonetic: 'O',
     helping: 'O<span>ver</span>',
+    type: 'vowels',
     sound: {
       file: 'file_15.wav',
       time: [7700, 700],
@@ -232,6 +256,7 @@ export const korean = [
     letter: 'ㅛ',
     phonetic: 'Yo',
     helping: '<span>Ma</span>yo<span>nnaise</span>',
+    type: 'vowels',
     sound: {
       file: 'file_15.wav',
       time: [9600, 700],
@@ -241,6 +266,7 @@ export const korean = [
     letter: 'ㅜ',
     phonetic: 'U',
     helping: 'U<span>nder</span>',
+    type: 'vowels',
     sound: {
       file: 'file_15.wav',
       time: [11700, 700],
@@ -250,6 +276,7 @@ export const korean = [
     letter: 'ㅠ',
     phonetic: 'Yu',
     helping: 'Yu<span>kulele</span>',
+    type: 'vowels',
     sound: {
       file: 'file_15.wav',
       time: [13750, 700],
@@ -259,6 +286,7 @@ export const korean = [
     letter: 'ㅡ',
     phonetic: 'Uh',
     helping: '<span>Br</span>oo<span>k</span>',
+    type: 'vowels',
     sound: {
       file: 'file_15.wav',
       time: [15600, 700],
@@ -268,6 +296,7 @@ export const korean = [
     letter: 'ㅣ',
     phonetic: 'I',
     helping: '<span>Tr</span>ee',
+    type: 'vowels',
     sound: {
       file: 'file_15.wav',
       time: [17450, 700],
@@ -277,6 +306,7 @@ export const korean = [
     letter: 'ㅐ',
     phonetic: 'Ae',
     helping: '',
+    type: 'vowels',
     sound: {
       file: 'file_15.wav',
       time: [19418, 389],
@@ -291,6 +321,7 @@ export const korean = [
     letter: 'ㅒ',
     phonetic: 'Yae',
     helping: '<span>Pl</span>ay',
+    type: 'vowels',
     sound: {
       file: 'file_18.wav',
       time: [0, 600],
@@ -300,6 +331,7 @@ export const korean = [
     letter: 'ㅔ',
     phonetic: 'e',
     helping: '<span>Pl</span>ay',
+    type: 'vowels',
     sound: {
       file: 'file_18.wav',
       time: [2300, 750],
@@ -309,6 +341,7 @@ export const korean = [
     letter: 'ㅖ',
     phonetic: 'Ye',
     helping: '<span>Pl</span>ay',
+    type: 'vowels',
     sound: {
       file: 'file_18.wav',
       time: [4620, 750],
@@ -318,6 +351,7 @@ export const korean = [
     letter: 'ㅚ',
     phonetic: 'Oe',
     helping: '',
+    type: 'vowels',
     sound: {
       file: 'file_18.wav',
       time: [7060, 750],
@@ -327,6 +361,7 @@ export const korean = [
     letter: 'ㅘ',
     phonetic: 'Wa',
     helping: '',
+    type: 'vowels',
     sound: {
       file: 'file_18.wav',
       time: [9340, 750],
@@ -336,6 +371,7 @@ export const korean = [
     letter: 'ㅙ',
     phonetic: 'Wae',
     helping: '',
+    type: 'vowels',
     sound: {
       file: 'file_18.wav',
       time: [11720, 750],
@@ -345,6 +381,7 @@ export const korean = [
     letter: 'ㅟ',
     phonetic: 'Wi',
     helping: '',
+    type: 'vowels',
     sound: {
       file: 'file_18.wav',
       time: [14200, 750],
@@ -354,6 +391,7 @@ export const korean = [
     letter: 'ㅝ',
     phonetic: 'Wo',
     helping: '',
+    type: 'vowels',
     sound: {
       file: 'file_18.wav',
       time: [16720, 750],
@@ -363,6 +401,7 @@ export const korean = [
     letter: 'ㅞ',
     phonetic: 'We',
     helping: '',
+    type: 'vowels',
     sound: {
       file: 'file_18.wav',
       time: [19150, 750],
@@ -372,6 +411,7 @@ export const korean = [
     letter: 'ㅢ',
     phonetic: 'Ui',
     helping: '',
+    type: 'vowels',
     sound: {
       file: 'file_18.wav',
       time: [21750, 750],
