@@ -23,8 +23,12 @@ const Newtab = () => {
       <Navigation setCurrentNavItem={updateCurrent} />
       <div className="content">{currentContent === 0 && <Randomizer />}</div>
       <div className="content">{currentContent === 1 && <CheatSheet />}</div>
-      <Helpers />
-      <Footer />
+      {currentContent === 0 && (
+        <>
+          <Footer />
+          <Helpers />
+        </>
+      )}
     </main>
   );
 };

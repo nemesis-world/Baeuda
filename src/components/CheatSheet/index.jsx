@@ -96,12 +96,12 @@ const CheatSheet = () => {
             </animated.div>
           )}
         </Transition>
+        <animated.div style={styles}>
+          <nav className="cheatsheet__nav">
+            <ul>{theNav}</ul>
+          </nav>
+        </animated.div>
       </main>
-      <animated.div style={styles}>
-        <nav className="cheatsheet__nav">
-          <ul>{theNav}</ul>
-        </nav>
-      </animated.div>
     </>
   );
 };
