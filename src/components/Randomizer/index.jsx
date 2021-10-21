@@ -4,6 +4,7 @@ import { SpaceBar, AudioPlayer, Gradients } from '../../components';
 import { getRandom } from '../../helpers';
 import { colors } from '../../variables/colors';
 import { korean } from '../../assets/alphabet/korean';
+import { waveform } from '../../assets/assets';
 import './index.scss';
 
 function counter(state) {
@@ -77,6 +78,7 @@ const Randomizer = () => {
             <AudioPlayer
               current={currentLetter}
               audioSprite={currentSoundSprite}
+              element={<img alt="Press me!" src={waveform} />}
             />
           </div>
         )}

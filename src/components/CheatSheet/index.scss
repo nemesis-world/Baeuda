@@ -1,22 +1,29 @@
 .cheatsheet {
     .grid {
-        width: 100%;
-        max-width: 800px;
+        width: 540px;
         display: flex;
         flex-wrap: wrap;
         position: absolute;
         transform: translate(-50%,-50%);
+        &__extend {
+            width: 720px;   
+        }
         &__item {
             display: inline-flex;
-            padding: 8px;
-            padding-top: 10px;
+            padding: 4px;
+            padding-top: 6px;
             border: 2px solid var(--black);
             font-family: 'Jua', sans-serif;
-            font-size: 24px;
-            width: 48px;
+            font-size: 18px;
+            width: 40px;
             justify-content: center;
             line-height: 26px;
             margin: 4px;
+            cursor: pointer;
+        }
+        &__col {
+            display: flex;
+            flex-direction: column;
         }
     }
     &__nav {
@@ -36,5 +43,12 @@
                 }
             }
         }
+    }
+}
+
+.no__actions {
+    span {
+        pointer-events: none;
+        border-color: transparent !important;
     }
 }

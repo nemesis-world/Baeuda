@@ -1,9 +1,7 @@
 import React, { useCallback, useEffect } from 'react';
 import { Howl } from 'howler';
 
-import { waveform } from '../../assets/assets';
-
-const AudioPlayer = ({ current, audioSprite }) => {
+const AudioPlayer = ({ current, audioSprite, keyPlaying = true, element }) => {
   const { sound } = current;
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -24,15 +22,15 @@ const AudioPlayer = ({ current, audioSprite }) => {
   );
 
   useEffect(() => {
-    window.addEventListener('keydown', handleKeyDown);
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-    };
-  }, [handleKeyDown, audioSprite]);
+    if (keyPlaying) {
+      window.addEventListener('keydown', handleKeyDown);
+      return () => {
+        window.removeEventListener('keydown', handleKeyDown);
+      };
+    }
+  }, [handleKeyDown, audioSprite, keyPlaying]);
 
-  return (
-    <img onClick={() => aSound.play('audio')} alt="Press me!" src={waveform} />
-  );
+  return <span onClick={() => aSound.play('audio')}>{element}</span>;
 };
 
 export default AudioPlayer;

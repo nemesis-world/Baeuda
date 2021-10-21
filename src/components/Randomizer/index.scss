@@ -32,9 +32,10 @@ h2 {
         width: 100%;
         border-top: 6px solid var(--black);
         padding: 10px 0;
-        img {
-        display: inline-block;
-        cursor: pointer;
+        img, span {
+            display: inline-block;
+            vertical-align: top;
+            cursor: pointer;
         }
     }
 }
