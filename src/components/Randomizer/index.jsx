@@ -82,6 +82,7 @@ const Randomizer = () => {
             />
           </div>
         )}
+        <SpaceBar count={count} />
       </div>
     );
   }
@@ -92,10 +93,7 @@ const Randomizer = () => {
         firstGradient={gradientsArray[0]}
         secondGradient={gradientsArray[1]}
       />
-      <animated.div style={styles}>
-        {letter}
-        <SpaceBar count={count} />
-      </animated.div>
+      <animated.div style={styles}>{letter}</animated.div>
     </>
   );
 };

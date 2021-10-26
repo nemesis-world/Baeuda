@@ -1,5 +1,6 @@
 {
   "manifest_version": 3,
+  "version": "1.1.0",
   "name": "배우다 - Baeuda | Hangul Flash Tabs",
   "options_page": "options.html",
   "background": { "service_worker": "background.bundle.js" },
